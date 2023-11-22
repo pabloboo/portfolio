@@ -129,9 +129,122 @@ nav ul li a.active {
     color: #666;
 }
 
+/* PROJECTS */
+/* Estilos para la lista de proyectos y elementos del proyecto */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    width: 300px; /* Ancho deseado para cada elemento del proyecto */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.project-info h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.project-title {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.project-year {
+    display: inline-block;
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.project-link {
+    color: blue;
+    text-decoration: none;
+}
+
 
 /* SKILLS */
-/* Styles for the skills grid and skill cards */
+
+/* Estilos para el contenedor principal de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Estilos para el menú de círculos y línea de conexión */
+.skills-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 15%;
+}
+
+.menu-circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px; /* Ajustar la altura deseada para los círculos */
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-color: #fd0101; /* Color para el círculo activo */
+}
+
+.connecting-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 90%;
+    background-color: #ccc;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Estilos para las secciones de habilidades */
+.skills-content {
+    flex-grow: 1;
+    margin-left: 20px; /* Espacio entre el menú y las secciones de habilidades */
+}
+
+.skill-section {
+    display: none;
+}
+
 /* Styles for the skills grid and skill cards */
 .skills-grid {
     display: grid;

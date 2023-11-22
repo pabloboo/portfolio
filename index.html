@@ -90,45 +90,83 @@
         
         <!-- Projects Tab -->
         <section id="projects" class="tab-content" style="display: none;">
-            <h2>Projects</h2>
-            <!-- Add content for the projects tab -->
+            <div class="projects-list">
+                <div class="project-item">
+                    <img src="images/projects/project-tfg.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3 class="project-title">TFG</h3>
+                        <div class="project-year">2022</div>
+                        <p>Degree final project about a software that enables students and teachers to practice Spanish speaking</p>
+                        <a href="https://github.com/pabloboo/learning-spanish-pronuntiation" class="project-link" target="_blank">learning-spanish-pronuntiation</a>
+                    </div>
+                </div>
+                <!-- Agregar más elementos de proyecto similares según sea necesario -->
+            </div>
         </section>
+        
 
         <!-- Skills Tab -->
+        <!-- <section id="skills" class="tab-content" style="display: none;">
+        </section>         -->
         <section id="skills" class="tab-content" style="display: none;">
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="path_to_logo/logo1.png" alt="Skill 1 Logo">
-                    <h3>Skill 1</h3>
-                    <p>Description of Skill 1.</p>
+            <div class="skills-container">
+                <div class="skills-content">
+                    <div class="skill-section" id="technical-skills">
+                        <h3>Technical skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <img src="path_to_logo/logo1.png" alt="Skill 1 Logo">
+                                <h3>Skill 1</h3>
+                                <p>Description of Skill 1.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
+                                <h3>Skill 2</h3>
+                                <p>Description of Skill 2.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
+                                <h3>Skill 2</h3>
+                                <p>Description of Skill 2.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
+                                <h3>Skill 2</h3>
+                                <p>Description of Skill 2.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
+                                <h3>Skill 2</h3>
+                                <p>Description of Skill 2.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
+                                <h3>Skill 2</h3>
+                                <p>Description of Skill 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-section" id="soft-skills" style="display: none;">
+                        <h3>Soft Skills</h3>
+                        <!-- Aquí van las soft skills -->
+                    </div>
+                    <div class="skill-section" id="other-skills" style="display: none;">
+                        <h3>Other Skills</h3>
+                        <!-- Aquí van otras habilidades -->
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
-                    <h3>Skill 2</h3>
-                    <p>Description of Skill 2.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
-                    <h3>Skill 2</h3>
-                    <p>Description of Skill 2.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
-                    <h3>Skill 2</h3>
-                    <p>Description of Skill 2.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
-                    <h3>Skill 2</h3>
-                    <p>Description of Skill 2.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="path_to_logo/logo2.png" alt="Skill 2 Logo">
-                    <h3>Skill 2</h3>
-                    <p>Description of Skill 2.</p>
+
+                <div class="skills-menu">
+                    <div class="menu-circles">
+                        <div class="circle active" onclick="showSkillSection(1)"></div>
+                        <div class="circle" onclick="showSkillSection(2)"></div>
+                        <div class="circle" onclick="showSkillSection(3)"></div>
+                    </div>
+                    <div class="connecting-line"></div>
                 </div>
             </div>
-        </section>        
+        </section>
+        
 
         <!-- Contact Me Tab -->
         <section id="contact" class="tab-content" style="display: none;">

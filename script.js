@@ -26,5 +26,36 @@ function showTab(tabName) {
     selectedTabLink.style.color = '#fff'; // Set white text for the selected tab
 }
 
+// Función para mostrar la sección de habilidades correspondiente al hacer clic en los círculos
+function showSkillSection(sectionNumber) {
+    // Ocultar todas las secciones de habilidades
+    var sections = document.querySelectorAll('.skill-section');
+    sections.forEach(function(section) {
+        section.style.display = 'none';
+    });
+
+    // Mostrar la sección correspondiente al número recibido
+    var selectedSection = document.getElementById('technical-skills');
+    if (sectionNumber === 2) {
+        selectedSection = document.getElementById('soft-skills');
+    } else if (sectionNumber === 3) {
+        selectedSection = document.getElementById('other-skills');
+    }
+    selectedSection.style.display = 'block';
+
+    // Actualizar la clase 'active' en los círculos para resaltar el círculo seleccionado
+    var circles = document.querySelectorAll('.circle');
+    circles.forEach(function(circle, index) {
+        circle.classList.remove('active');
+        if (index === sectionNumber - 1) {
+            circle.classList.add('active');
+        }
+    });
+}
+
+// Mostrar la sección de habilidades técnicas por defecto al cargar la página
+showSkillSection(1);
+
+
 // Show the home tab by default
 showTab('home');
