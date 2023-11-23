@@ -129,6 +129,14 @@ nav ul li a.active {
     color: #666;
 }
 
+.list-item img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    display: block; /* Ensure images are displayed as block elements */
+    margin-left: auto; /* Align images to the left */
+    margin-right: auto;
+}
+
 /* PROJECTS */
 /* Estilos para la lista de proyectos y elementos del proyecto */
 .projects-list {
