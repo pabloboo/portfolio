@@ -15,7 +15,6 @@
                 <li><a href="#" id="about-tab" onclick="showTab('about')">About Me</a></li>
                 <li><a href="#" id="projects-tab" onclick="showTab('projects')">Projects</a></li>
                 <li><a href="#" id="skills-tab" onclick="showTab('skills')">Skills</a></li>
-                <li><a href="#" id="contact-tab" onclick="showTab('contact')">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +23,37 @@
         <!-- Home Tab -->
         <section id="home" class="tab-content">
             <h2>Welcome to My Portfolio</h2>
-            <!-- Add content for the home tab -->
+            <!-- Footer -->
+            <footer class="footer">
+                <span>© 2023 Pablo Boo</span>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/pablo-boo-iglesias-812a561a0/" target="_blank">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:pabloboocastrofeito@gmail.com">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>                    
+                    <a href="https://www.instagram.com/pabloboo_/" target="_blank">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>                    
+                    <a href="https://github.com/pabloboo" target="_blank">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>                    
+                </div>
+            </footer>
         </section>
 
         <section id="about" class="tab-content" style="display: none;">
@@ -77,12 +106,15 @@
                             <div class="list-item">
                                 <div class="list-item-left">
                                     <h4>Enxenio</h4>
-                                    <img src="images/about-me/enxenio.png" alt="Enxenio Logo">
+                                    <img src="images/about-me/logo.svg" alt="Enxenio Logo" style="width: 100px;">
                                 </div>
                                 <div class="list-item-right">
                                     <p><strong>Part time</strong>, april 2022 - march 2023</p>
                                     <p><strong>Internship</strong>, february 2022 - april 2023</p>
                                     <p>Full stack developer</p>
+                                    <span class="about-experience-technology">Java</span>
+                                    <span class="about-experience-technology">Spring</span>
+                                    <span class="about-experience-technology">Angular</span>
                                 </div>
                             </div>
                         </li>
@@ -99,6 +131,10 @@
                     <div class="project-info">
                         <h3 class="project-title">TFG</h3>
                         <div class="project-year">2023</div>
+                        <br>
+                        <span class="about-experience-technology">Angular</span>
+                        <span class="about-experience-technology">Python</span>
+                        <span class="about-experience-technology">Flask</span>
                         <p>Degree final project about a software that enables students and teachers to practice Spanish speaking</p>
                         <a href="https://ruc.udc.es/dspace/handle/2183/33347" class="project-link" target="_blank">learning-spanish-pronuntiation</a>
                     </div>
@@ -114,90 +150,64 @@
         <section id="skills" class="tab-content" style="display: none;">
             <div class="skills-container">
                 <div class="skills-content">
-                    <div class="skill-section" id="technical-skills">
-                        <h3>Technical skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <img src="images/skills/java_logo.png" alt="Java Logo">
-                                <h3>Java Programming</h3>
-                                <p>Proficient in Java programming language. Applied Java extensively in professional experience at Enxenio as a Full Stack Developer. Used Java in projects involving backend development.</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/angular_logo.png" alt="Angular Logo">
-                                <h3>Angular Framework</h3>
-                                <p>Skilled in Angular for front-end development. Utilized Angular at Enxenio as a Full Stack Developer and during the Final Project of the Computer Engineering degree. Implemented dynamic and responsive web applications.</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/github_logo.png" alt="GitHub Logo">
-                                <h3>GitHub</h3>
-                                <p>Proficient in version control using Git and GitHub. Leveraged GitHub for collaborative coding, managing repositories, and version control in professional experience at Enxenio.</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/python_logo.png" alt="Python Logo">
-                                <h3>Python Programming</h3>
-                                <p>Extensive use of Python in academic projects during Computer Engineering studies, including the Final Project involving Flask. Used python in backend development</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/flask_logo.png" alt="Flask Logo">
-                                <h3>Flask Framework</h3>
-                                <p>Applied Flask in the Final Project of the Computer Engineering degree for web development and API creation. Implemented RESTful services and utilized Flask for backend functionalities.</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/mysql_logo.png" alt="MySQL Logo">
-                                <h3>MySQL Database</h3>
-                                <p>Proficient in MySQL for database management. Used MySQL in academic studies for data storage, retrieval, and management within various projects involving relational databases.</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/spring-framework_logo.png" alt="Spring Framework Logo">
-                                <h3>Spring Framework</h3>
-                                <p>Experience with Spring Framework in academic studies. Utilized Spring for Java-based backend development, implementing enterprise-level applications and services.</p>
-                            </div>
-                            
-                            <div class="skill-card">
-                                <img src="images/skills/react_logo.png" alt="React Logo">
-                                <h3>React Framework</h3>
-                                <p>Acquired knowledge of React for front-end development during academic studies. Implemented dynamic user interfaces and single-page applications using React.</p>
-                            </div>   
-                            <div class="skill-card">
-                                <img src="images/skills/design-spring_logo.png" alt="Design Sprint Logo">
-                                <h3>Design Sprint Methodology</h3>
-                                <p>Successfully completed a 15-hour training in the Design Sprint methodology. Proficient in developing hypotheses, creating prototypes, and testing and validating ideas within a 5-day framework. Acquired through a verified badge earned from Kelea with a minimum of 80% attendance and an 80% passing grade in the final certification exam.</p>
-                            </div>                                                     
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="images/skills/java_logo.png" alt="Java Logo">
+                            <h3>Java Programming</h3>
+                            <p>Proficient in Java programming language. Applied Java extensively in professional experience at Enxenio as a Full Stack Developer. Used Java in projects involving backend development.</p>
                         </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/angular_logo.png" alt="Angular Logo">
+                            <h3>Angular Framework</h3>
+                            <p>Skilled in Angular for front-end development. Utilized Angular at Enxenio as a Full Stack Developer and during the Final Project of the Computer Engineering degree. Implemented dynamic and responsive web applications.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/github_logo.png" alt="GitHub Logo">
+                            <h3>GitHub</h3>
+                            <p>Proficient in version control using Git and GitHub. Leveraged GitHub for collaborative coding, managing repositories, and version control in professional experience at Enxenio.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/python_logo.png" alt="Python Logo">
+                            <h3>Python Programming</h3>
+                            <p>Extensive use of Python in academic projects during Computer Engineering studies, including the Final Project involving Flask. Used python in backend development</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/flask_logo.png" alt="Flask Logo">
+                            <h3>Flask Framework</h3>
+                            <p>Applied Flask in the Final Project of the Computer Engineering degree for web development and API creation. Implemented RESTful services and utilized Flask for backend functionalities.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/mysql_logo.png" alt="MySQL Logo">
+                            <h3>MySQL Database</h3>
+                            <p>Proficient in MySQL for database management. Used MySQL in academic studies for data storage, retrieval, and management within various projects involving relational databases.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/spring-framework_logo.png" alt="Spring Framework Logo">
+                            <h3>Spring Framework</h3>
+                            <p>Experience with Spring Framework in academic studies. Utilized Spring for Java-based backend development, implementing enterprise-level applications and services.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/react_logo.png" alt="React Logo">
+                            <h3>React Framework</h3>
+                            <p>Acquired knowledge of React for front-end development during academic studies. Implemented dynamic user interfaces and single-page applications using React.</p>
+                        </div>   
+                        <div class="skill-card">
+                            <img src="images/skills/design-spring_logo.png" alt="Design Sprint Logo">
+                            <h3>Design Sprint Methodology</h3>
+                            <p>Successfully completed a 15-hour training in the Design Sprint methodology. Proficient in developing hypotheses, creating prototypes, and testing and validating ideas within a 5-day framework. Acquired through a verified badge earned from Kelea.</p>
+                        </div>                                                     
                     </div>
-                    <div class="skill-section" id="soft-skills" style="display: none;">
-                        <h3>Soft Skills</h3>
-                        <!-- Aquí van las soft skills -->
-                    </div>
-                    <div class="skill-section" id="other-skills" style="display: none;">
-                        <h3>Other Skills</h3>
-                        <!-- Aquí van otras habilidades -->
-                    </div>
-                </div>
-
-                <div class="skills-menu">
-                    <div class="menu-circles">
-                        <div class="circle active" onclick="showSkillSection(1)"></div>
-                        <div class="circle" onclick="showSkillSection(2)"></div>
-                        <div class="circle" onclick="showSkillSection(3)"></div>
-                    </div>
-                    <div class="connecting-line"></div>
                 </div>
             </div>
         </section>
-        
 
-        <!-- Contact Me Tab -->
-        <section id="contact" class="tab-content" style="display: none;">
-            <h2>Contact Me</h2>
-            <!-- Add content for the contact me tab -->
-        </section>
     </main>
 
     <script src="script.js"></script>

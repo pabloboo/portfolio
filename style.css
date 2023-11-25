@@ -50,6 +50,38 @@ nav ul li a.active {
     }
 }
 
+/* HOME */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+.footer span {
+    margin-right: auto;
+}
+
+.footer a {
+    color: white;
+    margin-left: 20px; /* Adjust as needed */
+    text-decoration: none;
+}
 
 /* ABOUT ME */
 /* Styles for the curriculum-style list */
@@ -101,6 +133,16 @@ nav ul li a.active {
     color: #666;
 }
 
+/* style for boxes showing the skill associated with the project or experience*/
+.about-experience-technology {
+	font-size: 12px;
+	color: green;
+	border: 1px solid green;
+	padding: 3px 6px;
+	border-radius: 2px;
+	background-color: #40cf8f0f;
+}
+
 /* Styles for the curriculum-style list items in education and experience lists */
 .education-list .list-item-left,
 .experience-list .list-item-left {
@@ -135,6 +177,11 @@ nav ul li a.active {
     display: block; /* Ensure images are displayed as block elements */
     margin-left: auto; /* Align images to the left */
     margin-right: auto;
+}
+
+.curriculum-list img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* PROJECTS */
@@ -188,9 +235,23 @@ nav ul li a.active {
     font-size: 14px;
 }
 
+/* Styles for the projects section and project links */
 .project-link {
-    color: blue;
-    text-decoration: none;
+    color: var(--token-29b299a2-7598-46d8-bf12-ed72cf4b6df0, #004e92) !important; /* Set default link color to blue */
+    text-decoration: none; /* Remove default underline */
+}
+
+.project-link::after {
+    content: ""; /* Remove the ">" symbol content */
+    display: inline-block; /* Ensure the pseudo-element is inline-block */
+    width: 16px; /* Set the width of the SVG icon */
+    height: 8px; /* Set the height of the SVG icon */
+    vertical-align: middle; /* Align the SVG icon vertically with the link text */
+    margin-left: 5px; /* Add some spacing between the link text and the SVG icon */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg color='rgb(0, 78, 146)' weight='regular'%3E%3Cpolyline points='96 48 176 128 96 208' fill='none' stroke='rgb(0, 78, 146)' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover; /* Ensure the SVG icon covers the defined dimensions */
+    background-repeat: no-repeat; /* Prevent the SVG icon from repeating */
+    background-position: center; /* Center the SVG icon */
 }
 
 
@@ -201,46 +262,6 @@ nav ul li a.active {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-/* Estilos para el menú de círculos y línea de conexión */
-.skills-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-top: 15%;
-}
-
-.menu-circles {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px; /* Ajustar la altura deseada para los círculos */
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.circle.active {
-    background-color: #fd0101; /* Color para el círculo activo */
-}
-
-.connecting-line {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 90%;
-    background-color: #ccc;
-    transform: translateX(-50%);
-    z-index: -1;
 }
 
 /* Estilos para las secciones de habilidades */
@@ -269,11 +290,14 @@ nav ul li a.active {
 }
 
 .skill-card img {
-    max-width: 100px;
     margin-bottom: 10px;
     display: block; /* Ensure images are displayed as block elements */
     margin-left: auto; /* Align images to the left */
     margin-right: auto;
+    width: 45%;
+    height: 45%;
+    object-fit: contain; /* Maintain aspect ratio while covering the given dimensions */
+    border-radius: 5px; /* Apply border radius to match the card */
 }
 
 .skill-card h3 {
