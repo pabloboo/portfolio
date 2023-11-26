@@ -26,5 +26,14 @@ function showTab(tabName) {
     selectedTabLink.style.color = '#fff'; // Set white text for the selected tab
 }
 
+function loadIndexEnglish() {
+    window.location.href = 'index.html';
+}
+
+function loadIndexSpanish() {
+    window.location.href = 'index-es.html';
+}
+  
+
 // Show the home tab by default
 showTab('home');
