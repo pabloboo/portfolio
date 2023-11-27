@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Boo</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,10 +23,18 @@
     <main>
         <!-- Home Tab -->
         <section id="home" class="tab-content">
-            <h2>Welcome to My Portfolio</h2>
+            <picture>
+                <!-- For screens smaller than or equal to 1080px -->
+                <source media="(max-width: 700px)" srcset="images/home/gradient-transparent-mobile.png" style="width: 65%; height: auto; margin-left: 20%; margin-top: 0%;">
+                <!-- Default image for larger screens -->
+                <img src="images/home/gradient-transparent-web.png" alt="Desktop Image" style="width: 65%; height: auto; margin-left: 0;">
+            </picture>
             <!-- Footer -->
             <footer class="footer">
                 <span>© 2023 Pablo Boo</span>
+                <div onclick="loadIndexGalician()">
+                    <img src="images/home/es-ga.svg" alt="Galego" width="20" height="auto">
+                </div>
                 <div onclick="loadIndexSpanish()">
                     <img src="images/home/es.svg" alt="Spanish" width="20" height="auto">
                 </div>

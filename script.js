@@ -33,6 +33,10 @@ function loadIndexEnglish() {
 function loadIndexSpanish() {
     window.location.href = 'index-es.html';
 }
+
+function loadIndexGalician() {
+    window.location.href = 'index-ga.html';
+}
   
 
 // Show the home tab by default

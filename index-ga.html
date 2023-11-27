@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Boo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Pestañas de Navegación -->
+        <nav>
+            <ul>
+                <li><a href="#" id="home-tab" class="active" onclick="showTab('home')">Inicio</a></li>
+                <li><a href="#" id="about-tab" onclick="showTab('about')">Sobre min</a></li>
+                <li><a href="#" id="projects-tab" onclick="showTab('projects')">Proxectos</a></li>
+                <li><a href="#" id="skills-tab" onclick="showTab('skills')">Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Pestaña de Inicio -->
+        <section id="home" class="tab-content">
+            <picture>
+                <!-- Para pantallas menores o iguales a 1080px -->
+                <source media="(max-width: 700px)" srcset="images/home/gradient-transparent-mobile.png" style="width: 65%; height: auto; margin-left: 20%; margin-top: 0%;">
+                <!-- Imagen predeterminada para pantallas más grandes -->
+                <img src="images/home/gradient-transparent-web.png" alt="Imaxe de Escritorio" style="width: 65%; height: auto; margin-left: 0;">
+            </picture>
+            <!-- Pé de páxina -->
+            <footer class="footer">
+                <span>© 2023 Pablo Boo</span>
+                <div onclick="loadIndexSpanish()">
+                    <img src="images/home/es.svg" alt="Español" width="20" height="auto">
+                </div>
+                <div onclick="loadIndexEnglish()">
+                    <img src="images/home/gb.svg" alt="English" width="20" height="auto">
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/pablo-boo-iglesias-812a561a0/" target="_blank">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:pabloboocastrofeito@gmail.com">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>                    
+                    <a href="https://www.instagram.com/pabloboo_/" target="_blank">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>                    
+                    <a href="https://github.com/pabloboo" target="_blank">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>                    
+                </div>
+            </footer>
+        </section>
+
+        <section id="about" class="tab-content" style="display: none;">
+            <div class="two-column-layout">
+                <div class="left-column">
+                    <h2>Formación</h2>
+                    <ul class="curriculum-list education-list">
+                        <li>
+                            <div class="list-item">
+                                <div class="list-item-left">
+                                    <h4>Mestrado en Enxeñaría Informática</h4>
+                                    <img src="images/about-me/UDC.png" alt="Logo da UDC">
+                                </div>
+                                <div class="list-item-right">
+                                    <p><strong>UDC</strong>, 2023 - Presente</p>
+                                    <p>Este título garante a adquisición de todas as competencias establecidas para a profesión</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-item">
+                                <div class="list-item-left">
+                                    <h4>Enxeñaría Informática</h4>
+                                    <img src="images/about-me/UDC.png" alt="Logo da UDC">
+                                </div>
+                                <div class="list-item-right">
+                                    <p><strong>UDC</strong>, 2018 - 2023</p>
+                                    <p>Especialización en enxeñaría de software</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-item">
+                                <div class="list-item-left">
+                                    <h4>C1 Advanced - Puntuación 184</h4>
+                                    <img src="images/about-me/cambridge.png" alt="Logo de Cambridge">
+                                </div>
+                                <div class="list-item-right">
+                                    <p><strong>Cambridge University Press & Assessment English</strong>, Setembro de 2018</p>
+                                    <p>ID de Credencial: 189ES0295007</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h2>Experiencia</h2>
+                    <ul class="curriculum-list experience-list">
+                        <li>
+                            <div class="list-item">
+                                <div class="list-item-left">
+                                    <h4>Enxenio</h4>
+                                    <img src="images/about-me/logo.svg" alt="Logo de Enxenio" style="width: 100px;">
+                                </div>
+                                <div class="list-item-right">
+                                    <p><strong>Xornada parcial</strong>, abril de 2022 - marzo de 2023</p>
+                                    <p><strong>Prácticas</strong>, febrero de 2022 - abril de 2023</p>
+                                    <p>Desenvolvedor Full Stack</p>
+                                    <span class="about-experience-technology">Java</span>
+                                    <span class="about-experience-technology">Spring</span>
+                                    <span class="about-experience-technology">Angular</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>                      
+        
+        <!-- Pestaña de Proxectos -->
+        <section id="projects" class="tab-content" style="display: none;">
+            <div class="projects-list">
+                <div class="project-item">
+                    <img src="images/projects/project-tfg.png" alt="Proxecto 1">
+                    <div class="project-info">
+                        <h3 class="project-title">TFG</h3>
+                        <div class="project-year">2023</div>
+                        <br>
+                        <span class="about-experience-technology">Angular</span>
+                        <span class="about-experience-technology">Python</span>
+                        <span class="about-experience-technology">Flask</span>
+                        <p>Proxecto final de grao sobre un software que permite aos estudantes e profesores practicar a fala en español</p>
+                        <a href="https://ruc.udc.es/dspace/handle/2183/33347" class="project-link" target="_blank">aprendizaxe-pronuncia-espanol</a>
+                    </div>
+                </div>
+                <!-- Engadir máis elementos de proxecto semellantes de ser necesario -->
+            </div>
+        </section>
+        
+
+        <!-- Pestaña de Habilidades -->
+        <section id="skills" class="tab-content" style="display: none;">
+            <div class="skills-container">
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="images/skills/java_logo.png" alt="Logo de Java">
+                            <h3>Programación en Java</h3>
+                            <p>Competente na linguaxe de programación Java. Aplicado na experiencia profesional en Enxenio como Desenvolvedor Full Stack e usado en proxectos de desenvolvemento de backend.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/angular_logo.png" alt="Logo de Angular">
+                            <h3>Framework Angular</h3>
+                            <p>Competente en Angular para desenvolvemento front-end. Utilizado en Enxenio como Desenvolvedor Full Stack e no Proxecto Final do grao en Enxeñaría Informática. Implementación de aplicacións web dinámicas e responsivas.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/github_logo.png" alt="Logo de GitHub">
+                            <h3>GitHub</h3>
+                            <p>Competente no control de versións usando Git e GitHub. Usado para codificación colaborativa, xestión de repositorios e control de versións na experiencia profesional e académica.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/python_logo.png" alt="Logo de Python">
+                            <h3>Programación en Python</h3>
+                            <p>Uso extensivo de Python en proxectos académicos durante os estudos de Enxeñaría Informática, incluído o Proxecto Final de grao. Uso de Python no desenvolvemento de backend.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/flask_logo.png" alt="Logo de Flask">
+                            <h3>Framework Flask</h3>
+                            <p>Aplicación de Flask no Proxecto Final do grao en Enxeñaría Informática para a creación de APIs.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/mysql_logo.png" alt="Logo de MySQL">
+                            <h3>Base de datos MySQL</h3>
+                            <p>Competente en MySQL para xestión de bases de datos. Uso de MySQL en estudos académicos para almacenamento, recuperación e xestión de datos dentro de diversos proxectos que implican bases de datos relacionais.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/spring-framework_logo.png" alt="Logo de Spring Framework">
+                            <h3>Spring Framework</h3>
+                            <p>Experiencia con Spring Framework en estudos académicos. Utilizado para o desenvolvemento backend basado en Java, implementando aplicacións e servizos a nivel empresarial.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/react_logo.png" alt="Logo de React">
+                            <h3>React</h3>
+                            <p>Coñecemento adquirido de React para o desenvolvemento frontend durante os estudos académicos académicos. Usado para implementar interfaces de usuario dinámicas e aplicacións.</p>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="images/skills/design-spring_logo.png" alt="Logo de Design Sprint">
+                            <h3>Metodoloxía Design Sprint</h3>
+                            <p>Finalización con éxito de unha formación de 15 horas na metodoloxía Design Sprint. Competente no desenvolvemento de hipótesis, creación de prototipos, e prueba e validación de ideas dentro de un marco de 5 días. Adquirido a través de unha insignia verificada de Kelea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

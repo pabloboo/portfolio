@@ -73,6 +73,10 @@ body {
     width: 90%;
 }
 
+.footer img {
+    margin-left: 20px;
+}
+
 .footer span {
     margin-right: auto;
 }
@@ -94,6 +98,19 @@ body {
 .left-column,
 .right-column {
     flex-basis: 48%; /* Adjust the width of the columns as needed */
+}
+
+/* For screens smaller than 1080px (typical mobile screens) */
+@media (max-width: 1080px) {
+    /* Adjust the layout for education and work experience sections */
+    .two-column-layout {
+        display: inline-block;
+    }
+
+    .left-column,
+    .right-column {
+        flex-basis: 100%; /* Set both columns to full width */
+    }
 }
 
 /* Styles for the curriculum-style list */
@@ -233,6 +250,18 @@ body {
 .project-info p {
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+/* For screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+    /* Adjust the layout for project section */
+    /* CSS for centering the projects */
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Styles for the projects section and project links */

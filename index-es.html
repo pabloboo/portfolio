@@ -22,10 +22,18 @@
     <main>
         <!-- Pestaña de Inicio -->
         <section id="home" class="tab-content">
-            <h2>Bienvenido a Mi Portafolio</h2>
+            <picture>
+                <!-- For screens smaller than or equal to 1080px -->
+                <source media="(max-width: 700px)" srcset="images/home/gradient-transparent-mobile.png" style="width: 65%; height: auto; margin-left: 20%; margin-top: 0%;">
+                <!-- Default image for larger screens -->
+                <img src="images/home/gradient-transparent-web.png" alt="Desktop Image" style="width: 65%; height: auto; margin-left: 0;">
+            </picture>
             <!-- Pie de página -->
             <footer class="footer">
                 <span>© 2023 Pablo Boo</span>
+                <div onclick="loadIndexGalician()">
+                    <img src="images/home/es-ga.svg" alt="Galego" width="20" height="auto">
+                </div>
                 <div onclick="loadIndexEnglish()">
                     <img src="images/home/gb.svg" alt="English" width="20" height="auto">
                 </div>
