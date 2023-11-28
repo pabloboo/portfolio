@@ -37,7 +37,34 @@ function loadIndexSpanish() {
 function loadIndexGalician() {
     window.location.href = 'index-ga.html';
 }
-  
+
+// Scroll for mobile screens
+// Smooth scroll to section
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Event listeners for menu items
+document.getElementById('home-tab').addEventListener('click', function() {
+    scrollToSection('home');
+});
+
+document.getElementById('about-tab').addEventListener('click', function() {
+    scrollToSection('about');
+});
+
+document.getElementById('projects-tab').addEventListener('click', function() {
+    scrollToSection('projects');
+});
+
+document.getElementById('skills-tab').addEventListener('click', function() {
+    scrollToSection('skills');
+});
 
 // Show the home tab by default
 showTab('home');
