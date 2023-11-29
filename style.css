@@ -58,10 +58,14 @@ nav ul li a.active {
         display: none; /* Hide navigation tabs */
     }
 
+    .navigation-menu {
+        scale: 0.5;
+        white-space: nowrap;
+    }
+
     /* Show all tab contents */
     .tab-content {
         display: block !important; /* Display all sections */
-        margin-bottom: 40%;
     }
 
     /* Show tab titles only on mobile scroll version*/
@@ -140,6 +144,17 @@ body {
     text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+    .footer {
+        position: static; /* Change position to static for responsiveness */
+    }
+
+    .footer a,
+    .footer img {
+        margin-left: 5px; /* Add margin to separate elements */
+    }
+}
+
 /* ABOUT ME */
 /* Styles for the curriculum-style list */
 /* Styles for the two-column layout */
@@ -160,9 +175,25 @@ body {
         display: inline-block;
     }
 
-    .left-column,
-    .right-column {
-        flex-basis: 100%; /* Set both columns to full width */
+    /* Education and experience titles centered*/
+    .left-column > h2,
+    .right-column > h2 {
+        text-align: center;
+    }
+
+    .list-item-left {
+        flex: 0 0 !important; /* Adjust width of list-item-left */
+    }
+    .list-item-right {
+        flex: 1; /* Occupy remaining space */
+    }
+
+    .education-list .list-item-left,
+    .experience-list .list-item-left {
+        flex: 0 0 200px;
+        padding: 20px;
+        border-right: none !important; /* Delete separating line*/
+        text-align: center;
     }
 }
 
