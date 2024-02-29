@@ -289,6 +289,10 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.curriculum-vitae-download {
+    text-align: center;
+}
+
 /* PROJECTS */
 /* Estilos para la lista de proyectos y elementos del proyecto */
 .projects-list {
