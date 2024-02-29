@@ -58,6 +58,10 @@ nav ul li a.active {
         display: none; /* Hide navigation tabs */
     }
 
+    section { /* Minimum heigh is all screen */
+        min-height: 100vh;
+    }
+
     .navigation-menu {
         scale: 0.5;
         white-space: nowrap;
