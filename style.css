@@ -59,6 +59,7 @@ nav ul li a.active {
     }
 
     section { /* Minimum heigh is all screen */
+        margin-bottom: 20px;
         min-height: 100vh;
     }
 
@@ -78,8 +79,9 @@ nav ul li a.active {
         text-align: center;
         font-size: 24px;
         margin-top: 20px;
-        color: #333; /* Adjust color as needed */
-        /* Add additional styling as desired */
+        color: #ffffff;
+        font-style: bold;
+        border-bottom: 1px solid #ccc;
     }
 }
 
@@ -122,9 +124,23 @@ body {
     flex: 1;
 }
 
+.home-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+    /* background-color: #f9f9f9; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: -100px;
+    bottom: 200px;
+}
+
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* background-color: #333; */
     color: white;

@@ -29,9 +29,12 @@
                 <!-- Default image for larger screens -->
                 <img src="images/home/gradient-transparent-web.png" alt="Desktop Image" style="width: 65%; height: auto; margin-left: 0;">
             </picture>
+            <div class="home-text">
+                <h1>Hola, soy Pablo :)</h1>
+                <p>Soy un estudiante de Ingeniería Informática en la UDC y estoy buscando un trabajo de prácticas usando Kotlin.</p>
+            </div>
             <!-- Pie de página -->
             <footer class="footer">
-                <span>© 2023 Pablo Boo</span>
                 <div onclick="loadIndexGalician()">
                     <img src="images/home/es-ga.svg" alt="Galego" width="20" height="auto">
                 </div>
@@ -123,7 +126,7 @@
                                 </div>
                                 <div class="list-item-right">
                                     <p><strong>Jornada parcial</strong>, abril 2022 - marzo 2023</p>
-                                    <p><strong>Prácticas</strong>, febrero 2022 - abril 2023</p>
+                                    <p><strong>Prácticas</strong>, febrero 2022 - abril 2022</p>
                                     <p>Desarrollador Full Stack</p>
                                     <span class="about-experience-technology">Java</span>
                                     <span class="about-experience-technology">Spring</span>
@@ -141,8 +144,47 @@
         <section id="projects" class="tab-content" style="display: none;">
             <h2 class="section-title-mobile" style="display: none;">Proyectos</h2>
             <div class="projects-list">
+
                 <div class="project-item">
-                    <img src="images/projects/project-tfg.png" alt="Proyecto 1">
+                    <img src="images/projects/portadaGalegando21.png" alt="Proyecto 1">
+                    <div class="project-info">
+                        <h3 class="project-title">Galegando21</h3>
+                        <div class="project-year">Actual</div>
+                        <br>
+                        <span class="about-experience-technology">Kotlin</span>
+                        <p>Aplicación móvil para fomentar el uso del gallego.</p>
+                        <a href="https://github.com/pabloboo/Galegando21" class="project-link" target="_blank">repo Galegando21</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/projects/portadaBeFiter.png" alt="Proyecto 2">
+                    <div class="project-info">
+                        <h3 class="project-title">BeFiter</h3>
+                        <div class="project-year">2024</div>
+                        <br>
+                        <span class="about-experience-technology">Kotlin</span>
+                        <span class="about-experience-technology">Firebase</span>
+                        <p>Aplicación móvil similar a BeReal pero enfocada en el ejercicio físico.</p>
+                        <a href="https://youtu.be/NP1kjDfPHcM" class="project-link" target="_blank">demo BeFiter</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/projects/project-ElectrodatosWrapped.png" alt="Proyecto 3">
+                    <div class="project-info">
+                        <h3 class="project-title">ElectrodatosWrapped</h3>
+                        <div class="project-year">2024</div>
+                        <br>
+                        <span class="about-experience-technology">Python</span>
+                        <span class="about-experience-technology">Bokeh</span>
+                        <p>Visualizador interactivo de consumo de electrocidad desarrollado para la edición de HackUDC de 2024.</p>
+                        <a href="https://github.com/agr17/hackudc-electrodatos" class="project-link" target="_blank">repo ElectrodatosWrapped</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/projects/project-tfg.png" alt="Proyecto 4">
                     <div class="project-info">
                         <h3 class="project-title">TFG</h3>
                         <div class="project-year">2023</div>
@@ -156,7 +198,7 @@
                 </div>
 
                 <div class="project-item">
-                    <img src="images/projects/project-StudyPlanner.png" alt="Project 2">
+                    <img src="images/projects/project-StudyPlanner.png" alt="Proyecto 5">
                     <div class="project-info">
                         <h3 class="project-title">StudyPlanner</h3>
                         <div class="project-year">2023</div>
@@ -169,7 +211,7 @@
                 </div>
 
                 <div class="project-item">
-                    <img src="images/projects/project-ModaRiws.png" alt="Project 3">
+                    <img src="images/projects/project-ModaRiws.png" alt="Proyecto 6">
                     <div class="project-info">
                         <h3 class="project-title">Aplicación de ropa</h3>
                         <div class="project-year">2023</div>
@@ -182,18 +224,6 @@
                     </div>
                 </div>
 
-                <div class="project-item">
-                    <img src="images/projects/project-ElectrodatosWrapped.png" alt="Project 4">
-                    <div class="project-info">
-                        <h3 class="project-title">ElectrodatosWrapped</h3>
-                        <div class="project-year">2024</div>
-                        <br>
-                        <span class="about-experience-technology">Python</span>
-                        <span class="about-experience-technology">Bokeh</span>
-                        <p>Visualizador interactivo de consumo de electrocidad desarrollado para la edición de HackUDC de 2024.</p>
-                        <a href="https://github.com/agr17/hackudc-electrodatos" class="project-link" target="_blank">repo ElectrodatosWrapped</a>
-                    </div>
-                </div>
             </div>
         </section>
         
@@ -204,6 +234,13 @@
             <div class="skills-container">
                 <div class="skills-content">
                     <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <img src="images/skills/Kotlin_logo.svg.png" alt="Logo de Kotlin">
+                            <h3>Kotlin</h3>
+                            <p>Actualmente estoy desarrollando mi Trabajo Final de Master y también desarrollé una red social usando Kotlin</p>
+                        </div>
+
                         <div class="skill-card">
                             <img src="images/skills/java_logo.png" alt="Logo de Java">
                             <h3>Programación en Java</h3>
@@ -217,7 +254,7 @@
                         </div>
                         
                         <div class="skill-card">
-                            <img src="images/skills/flutter-logo.png" alt="Angular Logo">
+                            <img src="images/skills/flutter-logo.png" alt="Flutter Logo">
                             <h3>Flutter</h3>
                             <p>Implementé dos aplicaciones multiplataforma usando Flutter.</p>
                         </div>
