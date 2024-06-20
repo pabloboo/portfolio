@@ -68,3 +68,27 @@ document.getElementById('skills-tab').addEventListener('click', function() {
 
 // Show the home tab by default
 showTab('home');
+
+// Image carousel
+const carousels = {
+    carousel1: { currentSlideIndex: 0 },
+    carousel2: { currentSlideIndex: 0 },
+};
+
+function moveSlide(direction, carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+
+    carousels[carouselId].currentSlideIndex = (carousels[carouselId].currentSlideIndex + direction + totalSlides) % totalSlides;
+
+    const currentSlideIndex = carousels[carouselId].currentSlideIndex;
+    carousel.querySelector('.current-slide').classList.remove('current-slide');
+    slides[currentSlideIndex].classList.add('current-slide');
+
+    const track = carousel.querySelector('.carousel-track');
+    const slideWidth = slides[currentSlideIndex].clientWidth;
+    const newTransformValue = -slideWidth * currentSlideIndex;
+
+    track.style.transform = `translateX(${newTransformValue}px)`;
+}

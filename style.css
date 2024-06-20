@@ -311,10 +311,16 @@ body {
 
 /* PROJECTS */
 /* Estilos para la lista de proyectos y elementos del proyecto */
+.project-category-title {
+    text-align: center;
+    width: 100%;
+}
+
 .projects-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .project-item {
@@ -391,6 +397,68 @@ body {
     background-position: center; /* Center the SVG icon */
 }
 
+/* Image carrousel */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel#carousel1 {
+    background-color: white;
+    border: 2px solid #ccc;
+}
+
+.carousel#carousel2 {
+    background-color: black;
+    border: 2px solid #313131;
+}
+
+.carousel-track-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 80%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-track li {
+    list-style-type: none;
+}
 
 /* SKILLS */
 

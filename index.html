@@ -144,8 +144,22 @@
         <section id="projects" class="tab-content" style="display: none;">
             <h2 class="section-title-mobile" style="display: none;">Projects</h2>
             <div class="projects-list">
+                
+                <!-- Proyectos de Kotlin -->
+                <h2 class="project-category-title">Kotlin</h2>
                 <div class="project-item">
-                    <img src="images/projects/portadaGalegando21.png" alt="Project 1">
+                    <div class="carousel" id="carousel1">
+                        <button class="carousel-button prev" onclick="moveSlide(-1, 'carousel1')">&#10094;</button>
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide current-slide"><img src="images/projects/galegando21/01.png" alt="Image 1"></li>
+                                <li class="carousel-slide"><img src="images/projects/galegando21/02.png" alt="Image 2"></li>
+                                <li class="carousel-slide"><img src="images/projects/galegando21/03.png" alt="Image 3"></li>
+                                <li class="carousel-slide"><img src="images/projects/galegando21/04.png" alt="Image 4"></li>
+                            </ul>
+                        </div>
+                        <button class="carousel-button next" onclick="moveSlide(1, 'carousel1')">&#10095;</button>
+                    </div>                
                     <div class="project-info">
                         <h3 class="project-title">Galegando21</h3>
                         <div class="project-year">Currently</div>
@@ -157,7 +171,19 @@
                 </div>
 
                 <div class="project-item">
-                    <img src="images/projects/portadaBeFiter.png" alt="Project 2">
+                    <div class="carousel" id="carousel2">
+                        <button class="carousel-button prev" onclick="moveSlide(-1, 'carousel2')">&#10094;</button>
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide current-slide"><img src="images/projects/befiter/01.png" alt="Image 1"></li>
+                                <li class="carousel-slide"><img src="images/projects/befiter/02.png" alt="Image 2"></li>
+                                <li class="carousel-slide"><img src="images/projects/befiter/03.png" alt="Image 3"></li>
+                                <li class="carousel-slide"><img src="images/projects/befiter/04.png" alt="Image 4"></li>
+                                <li class="carousel-slide"><img src="images/projects/befiter/05.png" alt="Image 5"></li>
+                            </ul>
+                        </div>
+                        <button class="carousel-button next" onclick="moveSlide(1, 'carousel2')">&#10095;</button>
+                    </div>  
                     <div class="project-info">
                         <h3 class="project-title">BeFiter</h3>
                         <div class="project-year">2024</div>
@@ -169,6 +195,8 @@
                     </div>
                 </div>
 
+                <!-- Otros proyectos -->
+                <h2 class="project-category-title">Other</h2>
                 <div class="project-item">
                     <img src="images/projects/project-ElectrodatosWrapped.png" alt="Project 3">
                     <div class="project-info">
