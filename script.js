@@ -41,11 +41,13 @@ function loadIndexGalician() {
 // Scroll for mobile screens
 // Smooth scroll to section
 function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({
-            behavior: 'smooth'
-        });
+    if (window.innerWidth <= 768) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     }
 }
 
