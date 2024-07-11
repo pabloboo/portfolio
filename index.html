@@ -141,13 +141,14 @@
         .currently-container {
             text-align: center;
             margin-top: 60px;
+            margin-bottom: 40px;
         }
 
         .currently-title {
             font-size: 20px;
             font-weight: bold;
             color: black;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             border-radius: 50px;
             padding: 5px 20px;
             border: 2px solid black;
@@ -163,6 +164,21 @@
         .currently-description {
             font-size: 14px;
             color: black;
+        }
+
+        .masters-project-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sutil shadow to give depth */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .masters-project-link:hover, .masters-project-link:focus {
+            color: #0056b3;
+            text-decoration: underline;
         }
 
         #close-btn {
@@ -362,7 +378,7 @@
         <div class="currently-container">
             <div class="currently-title">CURRENTLY</div>
             <div class="currently-description">
-                Developing my Master's final project
+                Developing my <a href="https://play.google.com/store/apps/details?id=com.galegando21" target="_blank" class="masters-project-link">Master's final project</a>
             </div>
         </div>
     </div>
