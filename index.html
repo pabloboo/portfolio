@@ -198,6 +198,15 @@
             justify-content: center;
         }
 
+        .loading-icon {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+        }
+
         /* Desktop */
         @media (min-width: 1080px) {
             .list-container {
@@ -279,18 +288,26 @@
             var listItems = document.querySelectorAll('.list-container ul li');
             var title = document.querySelector('div.content-container');
             const originalContent = document.querySelector('div.content-container').innerHTML;
+            var loadingIcon = document.querySelector('#loadingIcon');
 
             if (window.innerWidth > 1080) {
                 function changeContentBasedOnItem(item) {
                     var content = item.getAttribute('data-content');
                     title.style.opacity = '0';
+                    loadingIcon.style.display = 'block';
                     setTimeout(function() {
                         if (content.match(/\.(mp4|webm|ogg)$/)) { // Video content
                             title.innerHTML = `<video width="1000" autoplay loop muted style="border-radius: 20px;"><source src="${content}" type="video/mp4">Tu navegador no soporta vídeos HTML5.</video>`;
+                            var video = title.querySelector('video');
+                            video.addEventListener('loadeddata', function() {
+                                loadingIcon.style.display = 'none';
+                                title.style.opacity = '1';
+                            });
                         } else {
                             title.innerHTML = content;
+                            loadingIcon.style.display = 'none';
+                            title.style.opacity = '1';
                         }
-                        title.style.opacity = '1';
                     }, 500);
                 }
 
@@ -323,6 +340,9 @@
                         document.querySelector('.content-container').style.display = 'none';
                         document.querySelector('.list-container').style.display = 'none';
 
+                        // Show loading icon
+                        loadingIcon.style.display = 'block';
+
                         // Load content
                         var content = item.getAttribute('data-content');
                         var videoElement = document.createElement('video');
@@ -336,6 +356,11 @@
                         videoElement.style.borderRadius = '20px';
                         container.innerHTML = '';
                         container.appendChild(videoElement);
+
+                        // Hide loading icon when video is loaded
+                        videoElement.addEventListener('loadeddata', function() {
+                            loadingIcon.style.display = 'none';
+                        });
                     });
                 });
 
@@ -395,6 +420,7 @@
                 Developing my <a href="https://pabloboo.github.io/Galegando21-landing-page/" target="_blank" class="masters-project-link">Master's final project</a>
             </div>
         </div>
+        <div class="loading-icon" id="loadingIcon">Loading...⏳</div>
     </div>
 
     <div class="mobile-content-container">
